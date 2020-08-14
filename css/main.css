@@ -41,3 +41,6 @@ button {
     border: unset;
     cursor: pointer;
 }
+div#result_form {
+   color: rgb(209, 84, 76)
+ }

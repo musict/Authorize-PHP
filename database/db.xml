@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<users></users>
+<users>
+  <musicy>
+    <hash>cOk52TF0cNnBze1F6V3l</hash>
+    <login>musicy</login>
+    <name>Себастьян</name>
+    <email>musicy@gmail.com</email>
+    <password>$2y$10$Va0UIUIsiJrDMh/fsmwOaOHspO.PTIBDCubtpZEhsYPNn8MamrbhG</password>
+  </musicy>
+</users>

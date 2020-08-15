@@ -7,7 +7,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $password_confirm = $_POST['password_confirm'];
 
-//Проверяем поля на возможные ошибки
+//Проверяем поля на основные возможные ошибки
 
 if (!isset($name) || empty($name)) {
   $result = ['type' => 'noName'];
@@ -81,8 +81,8 @@ if ($xml->count() != 0) {
 //  Добавляем нового пользователя в БД
 
 $xmldoc = new DomDocument( '1.0' );
-$xmldoc->preserveWhiteSpace = false;
-$xmldoc->formatOutput = true;
+$xmldoc->preserveWhiteSpace = FALSE;
+$xmldoc->formatOutput = TRUE;
 $hash = password_hash($password, PASSWORD_DEFAULT);
 $xmldoc->loadXML($xmlString, LIBXML_NOBLANKS);
 

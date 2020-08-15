@@ -37,7 +37,7 @@ if (isset($_POST["login"]) && isset($_POST["password"]) ) {
   		setcookie('key', $key, time()+3600);
 
       $xmldoc = new DomDocument( '1.0' );
-      $xmldoc->preserveWhiteSpace = FASLE;
+      $xmldoc->preserveWhiteSpace = FALSE;
       $xmldoc->formatOutput = TRUE;
       $xml = file_get_contents( 'database/db.xml');
       $xmldoc->loadXML( $xml, LIBXML_NOBLANKS );
@@ -45,9 +45,8 @@ if (isset($_POST["login"]) && isset($_POST["password"]) ) {
       $hashPath = 'boolean(/users/'.$login.'/hash)';
       $xpath = new DOMXPath($xmldoc);
       $hashNodeExists = $xpath->evaluate($hashPath);
-      
+
       if($hashNodeExists) {
-        $root = $xmldoc->getElementsByTagName($login)->item(0);
         $hash = $root->getElementsByTagName('hash')->item(0);
         $root->removeChild($hash);
         $xmldoc->save('database/db.xml');
@@ -57,7 +56,6 @@ if (isset($_POST["login"]) && isset($_POST["password"]) ) {
       $root->insertBefore( $hash, $root->firstChild );
       $hashValue = $xmldoc->createTextNode($key);
       $hash->appendChild($hashValue);
-
 
       $xmldoc->save('database/db.xml');
 

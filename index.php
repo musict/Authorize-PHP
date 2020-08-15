@@ -17,11 +17,11 @@ if (empty($_SESSION['auth']) or $_SESSION['auth'] == FALSE) {
 </head>
 <body>
   <form method="post" id="signin_form" action="" >
-      <input type="text" name="login" placeholder="Введите свой логин" required><br>
-      <input type="password" name="password" placeholder="Введите пароль" required><br>
+      <input type="text" name="login" placeholder="Введите свой логин*" required><br>
+      <input type="password" name="password" placeholder="Введите пароль*" required><br>
       <input type="button" id="btn" value="Войти" />
       <p>
-          У Вас нет аккаунта? - <a href="register.php">Зарегистрируйтесь</a>!
+          У Вас нет аккаунта? - <a href="register.php">Зарегистрируйтесь</a>
       </p>
       <br>
       <div id="result_form"></div>

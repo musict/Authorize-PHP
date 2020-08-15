@@ -14,15 +14,15 @@ session_start();
 <body>
   </form>
   <form method="post" id="signup_form" action="" >
-    <label>Ваше имя</label>
+    <label>Ваше имя*</label>
     <input type="text" name="name" placeholder="Введите свое имя" required>
-    <label>Логин</label>
+    <label>Логин*</label>
     <input type="text" name="login" placeholder="Введите свой логин" required>
-    <label>E-mail</label>
+    <label>E-mail*</label>
     <input type="email" name="email" placeholder="Введите адрес своей почты" required>
-    <label>Пароль</label>
+    <label>Пароль*</label>
     <input type="password" name="password" placeholder="Введите пароль" required>
-    <label>Подтверждение пароля</label>
+    <label>Подтверждение пароля*</label>
     <input type="password" name="password_confirm" placeholder="Подтвердите пароль" required>
     <input type="button" id="btn" value="Зарегистрироваться" />
     <p>

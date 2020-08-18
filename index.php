@@ -1,9 +1,5 @@
 <?php
-session_start();
 require_once "check_cookie.php";
-if (empty($_SESSION['auth']) or $_SESSION['auth'] == FALSE) {
-  checkCookie();
-}
 ?>
 
 <!doctype html>

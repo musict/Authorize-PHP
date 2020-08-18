@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
+  <a12>
+    <hash>BoQajhU2sOBkCWw0h5mY</hash>
+    <login>a12</login>
+    <name>Вася</name>
+    <email>a11@tut.by</email>
+    <password>$2y$10$gwin8sMcomDa8iAGzO/uSuPLZyD5dcPfgbYRZyAuaxcVLxTBJrlFq</password>
+  </a12>
+  <a1>
+    <hash>tWOoBCWykQsDxksCOwkg</hash>
+    <login>a1</login>
+    <name>Вася</name>
+    <email>a1@tut.by</email>
+    <password>$2y$10$ZLV/zTZyYkJfFnouHsse6emHwmdqWB38ZIGMFQBZFXjyzV8TPlGcu</password>
+  </a1>
+  <admin>
+    <hash>iBicig1Nt7wDiObj1PAX</hash>
+    <login>admin</login>
+    <name>Сергей</name>
+    <email>admin@tut.by</email>
+    <password>$2y$10$gHr62uZJpK/8CxIlIJuhH.TN2bnmEgjR8L1f0PS6ernL9NS83EBBO</password>
+  </admin>
   <musicy>
-    <hash>cOk52TF0cNnBze1F6V3l</hash>
+    <hash>uO62EhUsLxosoOQGC0vE</hash>
     <login>musicy</login>
     <name>Себастьян</name>
     <email>musicy@gmail.com</email>

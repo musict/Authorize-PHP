@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $login = $_POST['login'];
 $name = $_POST['name'];

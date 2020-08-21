@@ -1,3 +1,10 @@
+<?php
+require_once "check_cookie.php";
+if (empty($_SESSION['auth']) or $_SESSION['auth'] == FALSE) {
+  checkCookie();
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>

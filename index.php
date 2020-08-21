@@ -1,5 +1,8 @@
 <?php
 require_once "check_cookie.php";
+if (empty($_SESSION['auth']) or $_SESSION['auth'] == FALSE) {
+  checkCookie();
+}
 ?>
 
 <!doctype html>
@@ -15,7 +18,7 @@ require_once "check_cookie.php";
   <form method="post" id="signin_form" action="" >
       <input type="text" name="login" placeholder="Введите свой логин*" required><br>
       <input type="password" name="password" placeholder="Введите пароль*" required><br>
-      <input type="button" id="btn" value="Войти" />
+      <input type="submit" id="btn" value="Войти" />
       <p>
           У Вас нет аккаунта? - <a href="register.php">Зарегистрируйтесь</a>
       </p>

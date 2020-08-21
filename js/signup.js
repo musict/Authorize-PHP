@@ -11,10 +11,9 @@ function sendAjaxForm(result_form, signup_form, url) {
     $.ajax({
         url:     url,
         type:     "POST",
-        dataType: "html",
+        dataType: "json",
         data: $("#"+signup_form).serialize(),
-        success: function(response) {
-          result = $.parseJSON(response);
+        success: function(result) {
           switch (result.type)
               {
                   case 'loginExist':

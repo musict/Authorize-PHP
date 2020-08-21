@@ -11,10 +11,9 @@ function sendAjaxForm(result_form, signin_form, url) {
     $.ajax({
         url:     url,
         type:     "POST",
-        dataType: "html",
+        dataType: "json",
         data: $("#"+signin_form).serialize(),
-        success: function(response) {
-          result = $.parseJSON(response);
+        success: function(result) {
           if (result.status) {
             window.location.href = 'profile.php';
           } else {

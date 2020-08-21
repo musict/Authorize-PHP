@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
+  <admin>
+    <hash>7CQBKTYZDa841ALUtLeE</hash>
+    <login>admin</login>
+    <name>Админ</name>
+    <email>admin@gmail.com</email>
+    <password>$2y$10$OzO4juD4ai3zzpaVYZ7FI.yK.CbAOde8uezRIhcNRkqdlmssjB5UW</password>
+  </admin>
   <musicy>
-    <hash>az7URUZMF8ZS0B0zSUuW</hash>
+    <hash>Wrn67srdVV2nKHeVa00v</hash>
     <login>musicy</login>
     <name>Сергей</name>
     <email>musicy@yandex.ru</email>
